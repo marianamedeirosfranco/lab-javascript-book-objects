@@ -105,16 +105,16 @@ const booksArray = [
 
 
 // Iteration 2 | Book Details
-function getBookDetails() {
-  // Your code here:
-
+function getBookDetails(book) {
+  return `${book.title} - ${book.author} - ${book.pages} pages`;
 }
 
 
 
-// Iteration 3 | Delete Language
-// Your code here:
-
+// Iteration 3 | Delete Lanuguage
+booksArray.forEach((book) => {
+  delete book.details.language;
+});
 
 
 
